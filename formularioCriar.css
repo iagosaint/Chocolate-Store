@@ -1,0 +1,89 @@
+body {
+    font-family: 'Bree Serif', serif;
+    background-image: linear-gradient(to right, #FF041B, #770505);
+}
+
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+fieldset {
+    border: 3px solid #FF041B;
+}
+
+legend {
+    border: 1px solid #FF041B;
+    padding: 10px;
+    text-align: center;
+    background-color: #FF041B;
+    color: white;
+    border-radius: 5px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background-color: red;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    letter-spacing: 2px;
+    font-family: 'Bree Serif', serif;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 10px;
+    color: #FF041B;
+}
+
+#data-nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.btn {
+    background-color: #FF041B;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Bree Serif', serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #950f1a;
+    color: rgb(255, 125, 125);
+}
+
+
